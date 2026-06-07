@@ -37,9 +37,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-export const metadata = {
-  icons: {
-    icon: "/icon.png",
-  },
-};
