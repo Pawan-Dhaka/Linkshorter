@@ -1,65 +1,37 @@
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <section className="grid sm:grid-cols-2 grid-cols-1    ">
+        <div className="flex flex-col justify-center items-center gap-10">
+          <h2 className=" poppins-semibold sm:text-4xl text-2xl text-center">Best URL Shortener on the Internet</h2>
+          <p className="w-3/4 text-center  sm:poppins-regular sm:font-semibold">Transform long, messy URLs into short, memorable links in seconds. No accounts to create, no payments to make, and no unnecessary steps—just a simple, powerful URL shortener built for <span className="text-pink-400 font-bold">Everyone</span>.</p>
+          <div className="flex gap-8 text-xl -mt-3 ">
+            <Link href={"/shorten"} className=' test-center bg-pink-400 hover:scale-105  font-bold  hover:bg-pink-500 text-black rounded-lg px-2' >Try Now</Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="flex justify-center sm:order-last order-first">
+          <img className=" brightness-75 contrast-125 sm:h-[70vh] " src="/vector.png" alt="Url short image" />
         </div>
-      </main>
-    </div>
+      </section>
+      <section className="grid sm:grid-cols-2 grid-cols-1  ">
+        <div className="flex justify-center">
+          <img className=" brightness-75  sm:h-[70vh] " src="/clock.png" alt="Url short image" />
+        </div>
+        <div className="flex flex-col justify-center items-center gap-10">
+          <h2 className=" poppins-semibold sm:text-4xl text-2xl text-center">Shorten Links in Seconds</h2>
+          <p className="w-3/4 text-center  sm:poppins-regular sm:font-semibold">Say goodbye to long, cluttered URLs. Our platform lets you create clean, professional, and easy-to-share links in seconds, with no sign-ups, no hidden fees, and no complicated setup.</p>
+          <div className="flex gap-8 text-xl -mt-3 ">
+            <Link href={"/shorten"} className='text-center bg-pink-400 hover:scale-105  font-bold  hover:bg-pink-500 text-black rounded-lg px-2' >Try Now</Link>
+            
+          </div>
+        </div>
+
+      </section>
+    </>
   );
 }
