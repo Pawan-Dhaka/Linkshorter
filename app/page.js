@@ -18,8 +18,8 @@ export default function Home() {
           <img className=" brightness-75 contrast-125 sm:h-[70vh] " src="/vector.png" alt="Url short image" />
         </div>
       </section>
-      <section className="grid sm:grid-cols-2 grid-cols-1  ">
-        <div className="flex justify-center">
+      <section className="grid sm:grid-cols-2 grid-cols-1  bg-transparent  ">
+        <div className="flex justify-center  bg-transparent">
           <img className=" brightness-75  sm:h-[70vh] " src="/clock.png" alt="Url short image" />
         </div>
         <div className="flex flex-col justify-center items-center gap-10">
