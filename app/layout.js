@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
        <body className="min-h-full flex flex-col ">
-        <div className=" top-0  h-screen w-screen text-white bg-black sm:bg-neutral-950 sm:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] ">
+        <div className=" top-0  min-h-screen w-screen text-white bg-black sm:bg-neutral-950 sm:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] ">
         <Navbar />
         <div className="min-h-[85vh]">
         {children}
