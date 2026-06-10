@@ -74,7 +74,7 @@ export default function DemoPage() {
         {/* CTA */}
         <div className="text-center mt-16">
           <Link
-            href="/shortner"
+            href="/shorten"
             className="bg-pink-500 hover:bg-pink-600 px-8 py-4 rounded-lg font-bold text-lg"
           >
             Try It Now
